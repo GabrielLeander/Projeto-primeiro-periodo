@@ -1,0 +1,435 @@
+@media (max-width: 768px) {
+    .hero {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .services .service-cards {
+        flex-direction: column;
+        align-items: center;
+    }
+}
+
+
+
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f7f7f7;
+    color: black;
+}
+
+header {
+    background-color: white;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.header-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1em 2em;
+    max-width: 1300px;
+    margin: 0 auto;
+}
+
+header .logo {
+    display: flex;
+    align-items: center;
+}
+
+header .logo img {
+    width: 50px;
+    height: 50px;
+    margin-right: 0.5em;
+}
+
+header nav {
+    margin-left: auto;
+}
+
+header nav ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    text-align: center;
+}
+
+header nav ul li {
+    margin: 0 1em;
+}
+
+header nav ul li a {
+    text-decoration: none;
+    color: #333;
+    font-weight: bold;
+}
+
+.underline-hover-effect {
+    display: inline-block;
+    padding-bottom: 0.25rem;
+    position: relative;
+}
+
+.underline-hover-effect::before {
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 0;
+    height: 2px;
+    background-color: black;
+    transition: width 0.25s ease-out;
+}
+
+.underline-hover-effect:hover::before {
+    width: 100%;
+    left: 0;
+    right: auto;
+}
+
+.hero {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 4em 2em;
+    background-color: #e8f1f9;
+    text-align: center;
+}
+.hero-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.hero-text {
+    max-width: 50%;
+}
+
+.hero-text {
+    max-width: 600px;
+    margin-bottom: 2em;
+}
+
+.hero-text p {
+    font-size: 1.2em;
+    color: #665;
+}
+
+.hero-image img {
+    max-width: 100%;
+
+    height: auto;
+}
+
+.services {
+    padding: 4em 2em;
+    text-align: center;
+}
+
+.services h2 {
+    font-size: 2em;
+    margin-bottom: 1em;
+}
+
+.services p {
+    font-size: 1.2em;
+    color: #665;
+    margin-bottom: 2em;
+}
+
+.service-cards {
+    display: flex;
+    justify-content: space-around;
+    align-items: flex-start;
+}
+
+.service-card {
+    background-color: #fff;
+    padding: 2em;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+    height: 300px;
+    max-width: 300px;
+    text-align: center;
+}
+
+.service-card img {
+    width: 60px;
+    height: 60px;
+    margin-bottom: 1em;
+}
+
+.service-card h3 {
+    font-size: 1.5em;
+    color: #333;
+    margin-bottom: 0.5em;
+}
+
+.service-card p {
+    font-size: 1em;
+    color: #665;
+}
+
+.education {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    align-items: center;
+    justify-items: center;
+    padding: 4em 2em;
+    gap: 2em;
+    background-color: #fff;
+}
+
+.education-text {
+    max-width: 50%;
+}
+
+.education-text h2 {
+    font-size: 2.5em;
+    color: #333;
+}
+
+.education-text p {
+    font-size: 1.2em;
+    color: #666;
+}
+
+.education-image {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0 auto;
+}
+
+.education-image img {
+    max-width: 100%;
+    height: auto;
+}
+.recursos {
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    padding: 4em 2em;
+    background-color: #fff;
+}
+
+.recursos-text {
+    max-width: 50%;
+}
+
+.recursos-text h2 {
+    font-size: 2.5em;
+    color: #333;
+}
+
+.recursos-text p {
+    font-size: 1.2em;
+    color: #665;
+}
+
+.recursos-image img {
+    width: 300px;
+    max-width: 100%;
+    height: auto;
+    padding: 10px;
+}
+
+.button {
+    background: #FF4742;
+    border: 1px solid #FF4742;
+    border-radius: 6px;
+    box-shadow: rgba(0, 0, 0, 0.1) 1px 2px 4px;
+    color: #FFFFFF;
+    cursor: pointer;
+    display: inline-block;
+    font-family: nunito, roboto, proxima-nova, "proxima nova", sans-serif;
+    font-size: 16px;
+    font-weight: 800;
+    padding: 12px 14px;
+    text-align: center;
+    text-transform: none;
+    user-select: none;
+}
+
+.button:hover,
+.button:active {
+    background-color: initial;
+    color: #FF4742;
+}
+
+.button:active {
+    opacity: 0.5;
+}
+
+.button:hover {
+    .button:hover {
+        background-color: #e63946;
+        transition: background-color 0.3s ease;
+    }
+    
+}
+
+footer {
+    padding: 1em 2em;
+    text-align: center;
+    background-color: #fff;
+    box-shadow: 0 -2px 4px rgba(0, 0, 0, 0.1);
+}
+
+
+.footer-left {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 0.5em;
+}
+
+.footer-logo-container {
+    display: flex;
+    align-items: center;
+    gap: 0.5em;
+}
+
+.footer-logo {
+    width: 40px;
+    height: 40px;
+    object-fit: cover;
+}
+
+.footer-right ul {
+    list-style: none;
+    padding: 0;
+}
+
+.footer-right ul li {
+    margin: 0.5em 0;
+}
+
+.footer-right ul li a {
+    text-decoration: none;
+    color: #555;
+    transition: color 0.3s;
+}
+
+.footer-right ul li a:hover {
+    color: #000;
+}
+
+
+.text-center {
+    text-align: center;
+}
+
+.flex-center {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.rounded {
+    border-radius: 8px;
+}
+
+.box-shadow {
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+#mais {
+    display: none;
+}
+
+#btnLeiaMais {
+    background: #FF4742;
+    border: 1px solid #FF4742;
+    border-radius: 6px;
+    box-shadow: rgba(0, 0, 0, 0.1) 1px 2px 4px;
+    color: #FFFFFF;
+    cursor: pointer;
+    display: inline-block;
+    font-family: nunito, roboto, proxima-nova, "proxima nova", sans-serif;
+    font-size: 16px;
+    font-weight: 800;
+    padding: 12px 14px;
+    text-align: center;
+    text-transform: none;
+    user-select: none;
+}
+
+#btnLeiaMais:hover,
+#btnLeiaMais:active {
+    background-color: initial;
+    color: #FF4742;
+}
+
+#btnLeiaMais:active {
+    opacity: 0.5;
+}
+
+#btnLeiaMais:hover {
+    background-color: darkred;
+    color: white;
+}
+.footer {
+    background: linear-gradient(to right, hwb(208 30% 0%) 0%, #00f2fe 100%);
+    color: #ffffff;
+    padding: 2em;
+}
+
+.footer-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    max-width: 1200px;
+    margin: 0 auto;
+    flex-wrap: wrap;
+}
+
+.footer-left, .footer-right {
+    flex: 1;
+    margin: 0 1em;
+}
+
+.footer-logo {
+    width: 50px;
+    height: 50px;
+    margin-right: 0.5em;
+}
+
+.logo-container {
+    display: flex;
+    align-items: center;
+}
+
+.footer-left h2 {
+    margin: 0;
+}
+
+.footer-left p {
+    margin: 0.5em 0;
+}
+
+.footer-right h3 {
+    margin-bottom: 0.5em;
+}
+
+.footer-right ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.footer-right ul li {
+    margin-bottom: 0.5em;
+}
+
+.footer-right ul li a {
+    color: #ffffff;
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+.footer-right ul li a:hover {
+    color: black;
+}
